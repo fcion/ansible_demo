@@ -1,7 +1,7 @@
 [all:vars]
 ansible_connection=ssh
 ansible_user=root
-ansible_pass=20-MinjieSikao+21
+ansible_ssh_pass=20-MinjieSikao+21
 
 [all]
 192.168.121.34

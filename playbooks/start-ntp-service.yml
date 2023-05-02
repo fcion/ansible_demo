@@ -1,3 +1,4 @@
+---
 - name: Start NTP
   hosts: 192.168.121.34
   become: false

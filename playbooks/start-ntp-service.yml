@@ -1,0 +1,16 @@
+- name: Configure systems
+  hosts: 192.168.121.34
+  become: false
+  collections:
+    - community.vmware
+  
+  tasks:
+    - name: Start ntpd setting for an ESXi Host
+#       hosts: 192.168.121.34
+      community.vmware.vmware_host_service_manager:
+      #     hostname: '{{ vcenter_hostname }}'
+      #     username: '{{ vcenter_username }}'
+      #     password: '{{ vcenter_password }}'
+      #     esxi_hostname: '{{ esxi_hostname }}'
+        service_name: ntpd
+        state: start
